@@ -11,5 +11,5 @@ done < "$input"
 db_load -T -f $output -t hash userpass.db
 sudo mv userpass.db /etc/userpass.db
 # Besitzer und Zugriffsrechte ändern
-chown root:root /etc/userpass.db
-chmod 0600 /etc/userpass.db
+sudo chown root:root /etc/userpass.db
+sudo chmod 0600 /etc/userpass.db
