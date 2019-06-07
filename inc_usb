@@ -1,0 +1,16 @@
+# Authentifizierung ueber USB-Stick (pam_usb.so) und PIN #
+
+# erster Faktor: PIN
+auth	[success=ignore default=1]	pam_userdb.so crypt=crypt db=/etc/userpass
+
+# zweiter Faktor: USB-Stick
+auth	[success=2 default=ignore]	pam_usb.so
+
+# Alternatives Login ueber Standard pam_unix (fallback)
+auth	[success=1 default=ignore]	pam_unix.so	try_first_pass 
+
+# Fehlschlag
+auth	requisite			pam_deny.so
+
+# Erfolg
+auth	required	pam_permit.so
