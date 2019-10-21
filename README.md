@@ -10,3 +10,7 @@ https://github.com/Myria-de/Linux-PAM/wiki
 Klicken Sie die gewünschte Datei an, kopieren Sie den Text in einen Editor und speichern Sie die Datei.
 
 Oder Sie klicken auf "RAW" und speichern die Datei dann vom Browser aus, in Firefox beispielsweise über die Tastenkombination Strg-S.
+
+Dateien und Skripte müssen Sie unter Linux im Terminalfenster ausführbar machen:
+
+`chmod +x [Skript-Datei]`
