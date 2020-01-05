@@ -8,7 +8,7 @@ auth	[success=1 default=ignore]	pam_unix.so	try_first_pass
 # Alternative
 # Der Yubikey genügt für die Anmeldung
 #auth [success=2 default=ignore] pam_yubico.so mode=challenge-response
-# Ist er nicht vorhandem, erfolgt die Passwortabfrage
+# Ist er nicht vorhanden, erfolgt die Passwortabfrage
 #auth [success=1 default=ignore] pam_unix.so try_first_pass
 
 auth requisite pam_deny.so
